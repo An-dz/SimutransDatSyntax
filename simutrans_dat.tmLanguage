@@ -320,7 +320,7 @@
 			<key>comment</key>
 			<string>intro_month, retire_month parameter</string>
 			<key>match</key>
-			<string>(^([iI]ntro|[rR]etire)_month)([ \t]*=[ \t]*([0-9]|10|11|12)$)?</string>
+			<string>(^([iI]ntro|[rR]etire)_month)([ \t]*=[ \t]*([0-9]|10|11)$)?</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
