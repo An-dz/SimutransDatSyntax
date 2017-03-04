@@ -94,10 +94,10 @@
 			<key>comment</key>
 			<string>
 				parameters with boolean values
-				draw_as_ding, enables_pax, enables_post, enables_ware, end_of_choose, free_route, is_longblocksignal, is_presignal, is_private, is_signal, needs_ground, no_foreground, noconstruction, noinfo, own_waytype, pillar_asymmetric, single_way, trees_on_top
+				draw_as_ding, enables_pax, enables_post, enables_ware, end_of_choose, free_route, is_longblocksignal, is_presignal, is_private, is_signal, needs_ground, no_foreground, noconstruction, noinfo, pillar_asymmetric, single_way, trees_on_top
 			</string>
 			<key>match</key>
-			<string>(^([dD]raw_[aA]s_[dD]ing|[eE](nables_([pP](ax|ost)|[wW]are)|nd_[oO]f_[cC]hoose)|[fF]ree_[rR]oute|[iI]s_([pP]rivate|([lL]ong[bB]lock|[pP]re)?[sS]ignal)|[nN](eeds_[gG]round|o(_[fF]oreground|[cC]onstruction|[iI]nfo))|[oO]wn_[wW]aytype|[pP]illar_[aA]symmetric|[sS]ingle_[wW]ay|[tT]rees_[oO]n_[tT]op))\b([ \t]*=[ \t]*((0|1)|(true|false))$)?</string>
+			<string>(^([dD]raw_[aA]s_[dD]ing|[eE](nables_([pP](ax|ost)|[wW]are)|nd_[oO]f_[cC]hoose)|[fF]ree_[rR]oute|[iI]s_([pP]rivate|([lL]ong[bB]lock|[pP]re)?[sS]ignal)|[nN](eeds_[gG]round|o(_[fF]oreground|[cC]onstruction|[iI]nfo))|[pP]illar_[aA]symmetric|[sS]ingle_[wW]ay|[tT]rees_[oO]n_[tT]op))\b([ \t]*=[ \t]*((0|1)|(true|false))$)?</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -429,6 +429,25 @@
 			<string>obj parameter</string>
 			<key>match</key>
 			<string>(^[oO]bj)([ \t]*=[ \t]*([bB](ridge|uilding)|[cC](ity[cC]ar|rossing|ursor)|[fF](actory|ield)|[gG](ood|round(_[oO]bj)?)|[mM](enu|isc)|[pP]edestrian|[rR]oad[sS]ign|[sS](moke|ound|ymbol)|[tT](ree|unnel)|[vV]ehicle|[wW]ay([-][oO]bject)?)$)?</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.parameter.simutrans_dat</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.value.simutrans_dat</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>own_waytype parameter</string>
+			<key>match</key>
+			<string>([oO]wn_[wW]aytype)([ \t]*=[ \t]*([eE]lectrified_[tT]rack)$)?</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
