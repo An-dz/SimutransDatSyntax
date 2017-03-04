@@ -285,7 +285,7 @@
 			<key>match</key>
 			<string>(^[eE]xtension_[bB]uilding)</string>
 			<key>name</key>
-			<string>invalid.parameter.does-not-compile.simutrans_dat</string>
+			<string>invalid.parameter.obsolete.does-not-compile.simutrans_dat</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -535,7 +535,7 @@
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>invalid.value.does-not-compile.simutrans_dat</string>
+					<string>invalid.value.obsolete.does-not-compile.simutrans_dat</string>
 				</dict>
 			</dict>
 		</dict>
