@@ -104,6 +104,7 @@
 		{ "trigger": "runningcost", "contents": "runningcost=${1:number}" },
 		{ "trigger": "seasons", "contents": "seasons=${1:number}" },
 		{ "trigger": "smokespeed", "contents": "smokespeed=${1:number}" },
+		{ "trigger": "sound_interval", "contents": "sound_interval=${1:number}" },
 		{ "trigger": "sound_nr", "contents": "sound_nr=${1:number}" },
 		{ "trigger": "speed", "contents": "speed=${1:number}" },
 		{ "trigger": "speed_bonus", "contents": "speed_bonus=${1:number}" },

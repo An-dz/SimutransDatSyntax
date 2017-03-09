@@ -47,10 +47,10 @@
 			<key>comment</key>
 			<string>
 				parameters with any numeric values
-				animation_time, animation_time_open, animation_time_closed, axle_load, build_time, capacity, catg, chance, clusters, cost, dims, distributionweight, electricity_amount, electricity_boost, electricity_demand, expand_minimum, expand_probability, expand_range, expand_times, fixed_cost, gear, hq_level, intro_year, level, length, loading_time, mail_boost, mail_demand, maintenance, max_fields, max_height, max_length, max_lenght, max_weight, min_fields, min_speed, offset_left, passengers, passenger_boost, passenger_demand, payload, pax_level, pillar_distance, power, probability_to_spawn, productivity, range, retire_year, runningcost, smokeoffset, smoketile, smokespeed, sound_nr, speed_bonus, start_fields, station_capacity, station_maintenance, station_price, system_type, topspeed, value, weight, weight_per_unit
+				animation_time, animation_time_open, animation_time_closed, axle_load, build_time, capacity, catg, chance, clusters, cost, dims, distributionweight, electricity_amount, electricity_boost, electricity_demand, expand_minimum, expand_probability, expand_range, expand_times, fixed_cost, gear, hq_level, intro_year, level, length, loading_time, mail_boost, mail_demand, maintenance, max_fields, max_height, max_length, max_lenght, max_weight, min_fields, min_speed, offset_left, passengers, passenger_boost, passenger_demand, payload, pax_level, pillar_distance, power, probability_to_spawn, productivity, range, retire_year, runningcost, smokeoffset, smoketile, sound_interval, sound_nr, speed_bonus, start_fields, station_capacity, station_maintenance, station_price, system_type, topspeed, value, weight, weight_per_unit
 			</string>
 			<key>match</key>
-			<string>(^(([mM]ax_[lL]enght)|([sS]tation_([cC]apacity|maintenance))|([sS]tation_[pP]rice)|([eE]lectricity_[aA]mount)|[aA](xle_[lL]oad|nimation_[tT]ime(_([oO]pen|[cC]losed))?)|[bB]uild_[tT]ime|[cC](apacity|atg|hance|lusters)|([fF]ixed_|[rR]unning)?[cC]ost|[dD](ims|istribution[wW]eight)|[eE]xpand_([pP]robability|[mM]inimum|[rR]ange|[tT]imes)|([eE]lectricity|[pP]assenger|[mM]ail)_([bB]oost|[dD]emand)|[gG]ear|([hH][qQ]_)?[lL]evel|([iI]ntro|[rR]etire)_year|[lL](ength|oading_[tT]ime)|[mM](aintenance|ax_([fF]ields|[hH]eight|[lL]ength|[wW]eight)|in_([fF]ields|[sS]peed))|[oO]ffset_[lL]eft|[pP](assengers|ay[lL]oad|ax_[lL]evel|illar_[dD]istance|ower|robability_[tT]o_[sS]pawn|roductivity)|[sS](moke([oO]ffset|[tT]ile|[sS]peed)|peed_[bB]onus|ound_[nN]r|tart_[fF]ields|ystem_[tT]ype)|[rR]ange|[tT]op[sS]peed|[vV]alue|[wW]eight(_per_unit)?))\b([ \t]*=[ \t]*[-]?(\d+)\b)?</string>
+			<string>(^(([mM]ax_[lL]enght)|([sS]tation_([cC]apacity|maintenance))|([sS]tation_[pP]rice)|([eE]lectricity_[aA]mount)|[aA](xle_[lL]oad|nimation_[tT]ime(_([oO]pen|[cC]losed))?)|[bB]uild_[tT]ime|[cC](apacity|atg|hance|lusters)|([fF]ixed_|[rR]unning)?[cC]ost|[dD](ims|istribution[wW]eight)|[eE]xpand_([pP]robability|[mM]inimum|[rR]ange|[tT]imes)|([eE]lectricity|[pP]assenger|[mM]ail)_([bB]oost|[dD]emand)|[gG]ear|([hH][qQ]_)?[lL]evel|([iI]ntro|[rR]etire)_year|[lL](ength|oading_[tT]ime)|[mM](aintenance|ax_([fF]ields|[hH]eight|[lL]ength|[wW]eight)|in_([fF]ields|[sS]peed))|[oO]ffset_[lL]eft|[pP](assengers|ay[lL]oad|ax_[lL]evel|illar_[dD]istance|ower|robability_[tT]o_[sS]pawn|roductivity)|[sS](moke([oO]ffset|[tT]ile)|peed_[bB]onus|ound_([iI]nterval|[nN]r)|tart_[fF]ields|ystem_[tT]ype)|[rR]ange|[tT]op[sS]peed|[vV]alue|[wW]eight(_per_unit)?))\b([ \t]*=[ \t]*[-]?(\d+)\b)?</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -78,7 +78,7 @@
 					<key>name</key>
 					<string>invalid.deprecated.parameter.use-electricity_demand.simutrans_dat</string>
 				</dict>
-				<key>28</key>
+				<key>29</key>
 				<dict>
 					<key>name</key>
 					<string>constant.numeric.value.simutrans_dat</string>
@@ -136,9 +136,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>fields, freightimagetype, inputgood, inputsupplier, outputgood, outputsupplier parameter</string>
+			<string>fields, freightimagetype, inputgood, inputsupplier, outputgood parameters</string>
 			<key>match</key>
-			<string>(^([fF](ields|reight[iI]mage[tT]ype)|([iI]n|[oO]ut)put([gG]ood|[sS]upplier))(\[(\d+)\])?)([ \t]*=[ \t]*([ -.+\w]+))?</string>
+			<string>(^([fF](ields|reight[iI]mage[tT]ype)|([iI]n|[oO]ut)put[gG]ood)(\[(\d+)\])?)([ \t]*=[ \t]*([ -.+\w]+))?</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -146,12 +146,12 @@
 					<key>name</key>
 					<string>entity.name.tag.parameter.simutrans_dat</string>
 				</dict>
-				<key>7</key>
+				<key>6</key>
 				<dict>
 					<key>name</key>
 					<string>constant.numeric.value.simutrans_dat</string>
 				</dict>
-				<key>9</key>
+				<key>8</key>
 				<dict>
 					<key>name</key>
 					<string>string.value.simutrans_dat</string>
@@ -162,7 +162,7 @@
 			<key>comment</key>
 			<string>inputcapacity, inputfactor, outputcapacity, outputfactor, production_per_field, spawn_weight, storage_capacity parameter</string>
 			<key>match</key>
-			<string>(^(([iI]n|[oO]ut)put([cC]apacity|[fF]actor)|[pP]roduction_[pP]er_[fF]ield|[sS](pawn_[wW]eight|torage_[cC]apacity))(\[(\d+)\])?)([ \t]*=[ \t]*(\d+)\b)?</string>
+			<string>(^(([iI]n|[oO]ut)put([cC]apacity|[fF]actor)|[iI]nput[sS]upplier|[pP]roduction_[pP]er_[fF]ield|[sS](pawn_[wW]eight|torage_[cC]apacity))(\[(\d+)\])?)([ \t]*=[ \t]*(\d+)\b)?</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
