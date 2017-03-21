@@ -637,9 +637,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>(front_)?(open|close)image parameters</string>
+			<string>(front_)?(open|closed)image parameters</string>
 			<key>match</key>
-			<string>(^([fF]ront_)?([oO]pen|[cC]lose)[iI]mage(\[([nN][sS]|[eE][wW])\])?)</string>
+			<string>(^([fF]ront_)?([oO]pen|[cC]losed)[iI]mage(\[([nN][sS]|[eE][wW])\])?(\[(\d+)\])?)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -651,6 +651,11 @@
 				<dict>
 					<key>name</key>
 					<string>constant.language.value.simutrans_dat</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.value.simutrans_dat</string>
 				</dict>
 			</dict>
 		</dict>

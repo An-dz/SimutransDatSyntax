@@ -17,10 +17,10 @@ openimage[NS]=${1:image}.Y.X
 front_openimage[NS]=${1:image}.Y.X
 openimage[EW]=${1:image}.Y.X
 front_openimage[EW]=${1:image}.Y.X
-closeimage[NS]=${1:image}.Y.X
-front_closeimage[NS]=${1:image}.Y.X
-closeimage[EW]=${1:image}.Y.X
-front_closeimage[EW]=${1:image}.Y.X]]></content>
+closedimage[NS]=${1:image}.Y.X
+front_closedimage[NS]=${1:image}.Y.X
+closedimage[EW]=${1:image}.Y.X
+front_closedimage[EW]=${1:image}.Y.X]]></content>
     <tabTrigger>obj=crossing</tabTrigger>
     <scope>text.simutrans_dat</scope>
     <description>full crossing</description>
